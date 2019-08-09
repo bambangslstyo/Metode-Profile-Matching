@@ -1,0 +1,64 @@
+object foCariMhs: TfoCariMhs
+  Left = 537
+  Top = 329
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Daftar Mahasiswa'
+  ClientHeight = 266
+  ClientWidth = 291
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBGrid1: TDBGrid
+    AlignWithMargins = True
+    Left = 3
+    Top = 33
+    Width = 285
+    Height = 230
+    Cursor = crHandPoint
+    Align = alClient
+    DataSource = dm.dsMhs
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -13
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = [fsBold]
+    OnCellClick = DBGrid1CellClick
+  end
+  object eCari: TEdit
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 285
+    Height = 24
+    Align = alTop
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    TextHint = 'Seacrh'
+    OnChange = eCariChange
+    ExplicitLeft = 0
+    ExplicitTop = 0
+    ExplicitWidth = 291
+  end
+end
